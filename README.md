@@ -22,6 +22,11 @@
 - Per Server Prefix 
 - Ping Command
 
+# 💎 Preview
+## This it what the bot looks like...
+![](https://github.com/mrmotchy/stuff/blob/main/Unben55555555555555annt.PNG?raw=true)
+
+![](https://github.com/mrmotchy/stuff/blob/main/Unben6666666666annt.PNG?raw=true)
 
 # 🔩 Installation
 ## Install [discord.js](https://discord.js.org/#/)

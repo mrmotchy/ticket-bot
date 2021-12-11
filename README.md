@@ -1,4 +1,4 @@
-![Logo](https://github.com/mrmotchy/stuff/blob/main/mr.motchy%20(9).png?raw=true)
+![Logo](https://www.pikpng.com/pngl/m/181-1814799_early-bird-ticket-tickets-transparent-clipart.png)
 
 <div align="center">
   

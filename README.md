@@ -29,14 +29,14 @@
 ![](https://github.com/mrmotchy/stuff/blob/main/Unben6666666666annt.PNG?raw=true)
 
 # 🔩 Installation
-## Install [discord.js](https://discord.js.org/#/)
+## Create [TOKEN](https://discord.com/developers/)
 ```
-$ npm install discord.js
+$ under bot_token
 ```
 
-## Install [npm](https://www.npmjs.com)
+## Create [prefix]()
 ```
-$ npm install 
+$ server prefixes could be -; +; !; ?;...
 ```
 
 # 💻 Code example

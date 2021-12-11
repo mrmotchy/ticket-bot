@@ -1,4 +1,4 @@
-![Logo](https://github.com/mrmotchy/stuff/blob/main/ticket-transparent-background-411627.png?raw=true)
+![Logo](https://www.seekpng.com/png/full/270-2700588_vip-tickets-for-trixie-delight-u0026-starship-vip.png)
 
 <div align="center">
   

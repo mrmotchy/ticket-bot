@@ -11,8 +11,16 @@
   
   # Features
   * **Watch my YT video & host your [bot 24/7](https://dsc.gg/dst74)**
-  * Easy to run
-  * nice & clean color roles bot
+- Setup 
+- Open 
+- Close
+- Add
+- Remove
+- Rename
+- Close
+- Reopen
+- Per Server Prefix 
+- Ping Command
 
 
 # 🔩 Installation
@@ -30,25 +38,30 @@ $ npm install
 This is a simple example of code using this package.
 
 ```js
-if(command === settings.prefix + settings.rainbowcommand) {
-        const rolez = message.mentions.roles.first() || message.guild.roles.find(r=> r.name === args [0])
-        if(!rolez) return message.channel.send(settings.messageresponse.rolenotfound).catch(err=> message.channel.send("No response"))
-        if(!message.guild.member(bot.user.id).hasPermission("MANAGE_ROLES")) return message.channel.send(settings.messageresponse.missingperm).catch(err=> message.channel.send("no response"))
-        var colors = settings.rainbowrole
-        var rolestart = setInterval(function() {
-            var colorsz = colors[Math.floor(Math.random() * colors.length)];
-            rolez.setColor(colorsz)
-        }, settings.rainbowdelay); 
-            message.channel.send(settings.messageresponse.success).catch(err=> message.channel.send("No response"))
+            id: require('quick.db').fetch(`TicketAdminRole_${message.guild.id}`),
+            allow: ["SEND_MESSAGES", "VIEW_CHANNEL"]
+        }, {
+            id: message.guild.roles.everyone,
+            deny: ["VIEW_CHANNEL"]
+        }]).then(() => {
+            message.channel.send({
+                embed: {
+                    title: '✅ | Done',
+                    description: `${txt} has been added to this ticket`,
+                    color: 0x00D700
+                }
+            }).then(async function(msg) {
+                setTimeout(() => {
+                    msg.delete().catch(err => { return })
+                }, 1000 * 7);
 ```
 &
 ```js
-const Discord = require("discord.js") 
-const settings = require("./settings.json")
-const bot = new Discord.Client()
-bot.on('ready', async => {
-console.log("Rainbow bot is ready!" + "\n" + bot.user.tag + "\n" + "Server Count: "  + bot.guilds.size + "\n" + "Cached users: " + bot.users.size + "\n" + "Enjoy!")
-});
+                const embed2 = new Discord.MessageEmbed()
+                .setTitle(`Premium Ticket Commands`)
+                .setThumbnail(message.guild.iconURL({ dynamic: true }))
+                .setDescription(`**__Here Are My Commands:__**\n\`setup,\` \`transcript,\` \`rename,\` \`remove,\` \`ping,\` \`open,\` \`close\``)
+                .setColor(`#0x2F3136`)
 ```
 
 <br/>
